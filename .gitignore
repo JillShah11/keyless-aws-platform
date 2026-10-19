@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+
+# Terraform: state files can contain secrets
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+
+# Secrets: never commit these
+*.pem
+.env
+*.tfvars
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
